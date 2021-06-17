@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter";
+}
+
+@keyframes background-color {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 145, 3, 1) 0%,
+    rgba(255, 0, 67, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: linear 5s infinite alternate background-color;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tagline {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px;
+  text-align: center;
+}
+
+button {
+  font-family: "Inter";
+  font-size: 1rem;
+  padding: 7.5px;
+  font-weight: 500;
+  border-radius: 7.5px;
+  border: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.cta-button {
+  font-size: 1.25rem;
+  padding: 10px;
+}
